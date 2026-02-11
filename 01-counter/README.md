@@ -1,7 +1,7 @@
 # 🚀 Project 01 — Counter
 
 ## 🌐 Live Demo
-👉 [View Live Demo](https://100-js-projects-eight.vercel.app/)
+👉 [View Live Demo](https://js-01-counter.vercel.app/)
 
 ---
 
