@@ -1,0 +1,38 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.8;
+  color: #333;
+  Background-Color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+    background-color: #fff;
+    height: 200px;
+    width: 400px;
+    /* border: 1px solid black; */
+    text-align: center;
+    /* display: flex; */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+p{
+    margin: 20px;
+}
+button{
+    border: none;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+
+  /* The box-shadow property is applied here */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
