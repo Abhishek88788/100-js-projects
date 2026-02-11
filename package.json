@@ -4,6 +4,6 @@
   "scripts": {
     "done": "node scripts/progress.js complete",
     "undo": "node scripts/progress.js undo",
-    "init-readme": "node ../scripts/init-readme.js"
+    "init-readme": "node scripts/init-readme.js"
   }
 }
