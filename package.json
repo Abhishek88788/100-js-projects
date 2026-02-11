@@ -1,0 +1,8 @@
+{
+  "name": "100-js-projects",
+  "private": true,
+  "scripts": {
+    "done": "node scripts/progress.js complete",
+    "undo": "node scripts/progress.js undo"
+  }
+}
