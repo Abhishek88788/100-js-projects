@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    height: 100vh;
+}
+
+.container{
+    background-color: azure;
+    padding: 20px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    text-align: center;
+    height: 400px;
+    width: 400px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+.countDisplay{
+    font-size: 3rem;
+    margin: 30px;
+    /* border: 1px solid #eee; */
+}
+
