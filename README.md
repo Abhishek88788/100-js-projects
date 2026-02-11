@@ -1,6 +1,6 @@
 # 100 JavaScript Projects
 
-Progress: 2/100 ✅
+Progress: 0/100 ✅
 
 ## 🟢 Basic (1-30)
 
@@ -8,7 +8,7 @@ Progress: 2/100 ✅
 - [ ] 02-color-flipper
 - [ ] 03-background-color-changer
 - [ ] 04-random-quote-generator
-- [x] 05-todo-list-basic
+- [ ] 05-todo-list-basic
 - [ ] 06-simple-calculator
 - [ ] 07-tip-calculator
 - [ ] 08-digital-clock
