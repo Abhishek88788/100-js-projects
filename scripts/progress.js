@@ -31,6 +31,7 @@ rl.question("Enter project number: ", (input) => {
 
     let name;
 
+    // ===== COMPLETE =====
     if (mode === "complete") {
       const match = content.match(unchecked);
       if (!match) throw new Error("Project already completed or not found");
@@ -39,6 +40,7 @@ rl.question("Enter project number: ", (input) => {
       content = content.replace(`- [ ] ${num}-${name}`, `- [x] ${num}-${name}`);
     }
 
+    // ===== UNDO =====
     if (mode === "undo") {
       const match = content.match(checked);
       if (!match) throw new Error("Project is not completed yet");
@@ -47,8 +49,10 @@ rl.question("Enter project number: ", (input) => {
       content = content.replace(`- [x] ${num}-${name}`, `- [ ] ${num}-${name}`);
     }
 
-    const completed = (content.match(/\[x\]/g) || []).length;
+    // ✅ FIXED COUNTING (only checklist lines)
+    const completed = (content.match(/- \[x\] \d{2}-/g) || []).length;
 
+    // update progress
     content = content.replace(
       /Progress:\s*\d+\/100/,
       `Progress: ${completed}/100`
@@ -59,11 +63,13 @@ rl.question("Enter project number: ", (input) => {
     const action = mode === "complete" ? "complete" : "undo";
     const message = `docs: ${action} ${num}-${name} (${completed}/100)`;
 
+    // commit only (NO PUSH)
     execSync("git add README.md", { stdio: "inherit" });
     execSync(`git commit -m "${message}"`, { stdio: "inherit" });
-    execSync("git push", { stdio: "inherit" });
 
-    console.log(`\n✅ ${message}\n`);
+    console.log(`\n✅ ${message}`);
+    console.log("👉 Now push manually if you want: git push\n");
+
   } catch (err) {
     console.log("\n❌", err.message, "\n");
   }
