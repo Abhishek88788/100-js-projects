@@ -1,6 +1,6 @@
 # 100 JavaScript Projects
 
-Progress: 5/100 ✅
+Progress: 6/100 ✅
 
 ## 🟢 Basic (1-30)
 
@@ -10,7 +10,7 @@ Progress: 5/100 ✅
 - [x] 04-random-quote-generator
 - [x] 05-todo-list-basic
 - [x] 06-simple-calculator
-- [ ] 07-tip-calculator
+- [x] 07-tip-calculator
 - [ ] 08-digital-clock
 - [ ] 09-countdown-timer
 - [ ] 10-random-password-generator
